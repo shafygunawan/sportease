@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <title>SportEase</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="container navbar__container">
+        <a class="navbar__brand" href=""
+          ><img alt="SportEase" src="./img/sportease.png"
+        /></a>
+        <nav class="navbar__nav">
+          <a class="navbar__link" href="#">Home</a>
+          <a class="navbar__link" href="#">Fields</a>
+          <a class="navbar__link" href="#">My Rent</a>
+          <a class="navbar__link" href="#">About</a>
+          <a class="navbar__link" href="#" data-favorite
+            >Favorite(<span>0</span>)</a
+          >
+        </nav>
+        <div class="navbar__right">
+          <a class="navbar__search" href="#"
+            ><img alt="Search" src="./img/icons/magnifier.png"
+          /></a>
+          <a class="navbar__cta" href="#">Sign in</a>
+          <!-- <a class="navbar__profile" href="#">
+            <img alt="Profile" src="./img/profiles/user-3.png" />
+          </a> -->
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container hero" data-animated>
+        <div class="hero__left">
+          <h1 class="hero__title">Rent our fields and conquer the game</h1>
+          <p class="hero__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat purus
+            suscipit turpis sed vitae.
+          </p>
+          <a href="#" class="hero__button">Get started</a>
+        </div>
+        <div class="hero__right">
+          <div class="hero__img-group">
+            <img alt="Field" src="./img/heros/hero-1.png" />
+            <img alt="Field" src="./img/heros/hero-2.png" />
+          </div>
+          <div class="hero__img-group">
+            <img alt="Field" src="./img/heros/hero-3.png" />
+            <img alt="Field" src="./img/heros/hero-4.png" />
+          </div>
+        </div>
+      </div>
+      <form action="" class="container filter" data-animated>
+        <div class="filter__search">
+          <label for="search">
+            <img alt="Search" src="./img/icons/magnifier-gray.png" />
+          </label>
+          <input
+            id="search"
+            name="search"
+            type="search"
+            placeholder="Search for fields"
+          />
+          <button type="submit">Search</button>
+        </div>
+        <div class="filter__list">
+          <div class="filter__item">
+            <label for="location">
+              <img alt="Location" src="./img/icons/location-gray.png" />
+            </label>
+            <select id="location" name="location">
+              <option value="" selected disabled>Location</option>
+              <option value="location-1">Location 1</option>
+              <option value="location-2">Location 2</option>
+              <option value="location-3">Location 3</option>
+            </select>
+          </div>
+          <div class="filter__item">
+            <label for="category">
+              <img alt="Category" src="./img/icons/grid-8-gray.png" />
+            </label>
+            <select id="category" name="category">
+              <option value="" selected disabled>Category</option>
+              <option value="category-1">Category 1</option>
+              <option value="category-2">Category 2</option>
+              <option value="category-3">Category 3</option>
+            </select>
+          </div>
+          <div class="filter__item">
+            <label for="time">
+              <img alt="Time" src="./img/icons/clock-gray.png" />
+            </label>
+            <input id="time" name="time" type="date" />
+          </div>
+        </div>
+      </form>
+      <div class="container featured-fields">
+        <div class="featured-fields__header" data-animated>
+          <h2>Featured fields</h2>
+          <a href="#">Browse all fields</a>
+        </div>
+        <div class="featured-fields__body">
+          <div class="featured-fields__card" data-animated>
+            <div class="featured-fields__card-left">
+              <img
+                alt=""
+                src="./img/fields/field-1.png"
+                class="featured-fields__card-img"
+              />
+              <button class="featured-fields__card-favorite" data-field-id="1">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="featured-fields__card-right">
+              <div class="featured-fields__card-top">
+                <p class="featured-fields__card-location">
+                  <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                  Jl. Wijaya Kusuma No. 03 Surabaya
+                </p>
+                <p class="featured-fields__card-price">$41</p>
+              </div>
+              <h3 class="featured-fields__card-name">
+                <a href="#">Indoor 01</a>
+              </h3>
+              <p class="featured-fields__card-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat
+                purus suscipit turpis sed vitae.
+              </p>
+              <hr />
+              <div class="featured-fields__card-feature-list">
+                <div class="featured-fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Tennis</span>
+                </div>
+                <div class="featured-fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+                <div class="featured-fields__card-feature-item">
+                  <img alt="Lamp" src="./img/icons/lamp-gray.png" />
+                  <span>4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-fields__card" data-animated>
+            <div class="featured-fields__card-left">
+              <img
+                alt=""
+                src="./img/fields/field-2.png"
+                class="featured-fields__card-img"
+              />
+              <button class="featured-fields__card-favorite" data-field-id="2">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="featured-fields__card-right">
+              <div class="featured-fields__card-top">
+                <p class="featured-fields__card-location">
+                  <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                  Pemuda No. 21 Surabaya
+                </p>
+                <p class="featured-fields__card-price">$45</p>
+              </div>
+              <h3 class="featured-fields__card-name">
+                <a href="#">Sila Futsal Timur</a>
+              </h3>
+              <p class="featured-fields__card-description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat
+                purus suscipit turpis sed vitae.
+              </p>
+              <hr />
+              <div class="featured-fields__card-feature-list">
+                <div class="featured-fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Futsal</span>
+                </div>
+                <div class="featured-fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+                <div class="featured-fields__card-feature-item">
+                  <img alt="Lamp" src="./img/icons/lamp-gray.png" />
+                  <span>4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container fields">
+        <div class="fields__header" data-animated>
+          <h2>Fields</h2>
+          <a href="#">Browse all fields</a>
+        </div>
+        <div class="fields__body">
+          <div class="fields__card" data-animated>
+            <div class="fields__card-top">
+              <img
+                alt=""
+                src="./img/fields/field-3.png"
+                class="fields__card-img"
+              />
+              <button class="fields__card-favorite" data-field-id="3">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="fields__card-body">
+              <p class="fields__card-price">$35</p>
+              <h3 class="fields__card-name">
+                <a href="#">Indoor 02</a>
+              </h3>
+              <p class="fields__card-location">
+                <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                Pemuda No. 21 Surabaya
+              </p>
+              <hr />
+              <div class="fields__card-feature-list">
+                <div class="fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Badminton</span>
+                </div>
+                <div class="fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fields__card" data-animated>
+            <div class="fields__card-top">
+              <img
+                alt=""
+                src="./img/fields/field-4.png"
+                class="fields__card-img"
+              />
+              <button class="fields__card-favorite" data-field-id="4">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="fields__card-body">
+              <p class="fields__card-price">$30</p>
+              <h3 class="fields__card-name">
+                <a href="#">Pahlawan Futsal</a>
+              </h3>
+              <p class="fields__card-location">
+                <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                Pahlawan No. 21 Gresik
+              </p>
+              <hr />
+              <div class="fields__card-feature-list">
+                <div class="fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Futsal</span>
+                </div>
+                <div class="fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fields__card" data-animated>
+            <div class="fields__card-top">
+              <img
+                alt=""
+                src="./img/fields/field-5.png"
+                class="fields__card-img"
+              />
+              <button class="fields__card-favorite" data-field-id="5">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="fields__card-body">
+              <p class="fields__card-price">$33</p>
+              <h3 class="fields__card-name">
+                <a href="#">Sila Futsal Barat</a>
+              </h3>
+              <p class="fields__card-location">
+                <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                Pemuda No. 21 Surabaya
+              </p>
+              <hr />
+              <div class="fields__card-feature-list">
+                <div class="fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Futsal</span>
+                </div>
+                <div class="fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fields__card" data-animated>
+            <div class="fields__card-top">
+              <img
+                alt=""
+                src="./img/fields/field-6.png"
+                class="fields__card-img"
+              />
+              <button class="fields__card-favorite" data-field-id="6">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="fields__card-body">
+              <p class="fields__card-price">$41</p>
+              <h3 class="fields__card-name">
+                <a href="#">Sila Futsal Timur 2</a>
+              </h3>
+              <p class="fields__card-location">
+                <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                Pemuda No. 21 Surabaya
+              </p>
+              <hr />
+              <div class="fields__card-feature-list">
+                <div class="fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Tennis</span>
+                </div>
+                <div class="fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fields__card" data-animated>
+            <div class="fields__card-top">
+              <img
+                alt=""
+                src="./img/fields/field-7.png"
+                class="fields__card-img"
+              />
+              <button class="fields__card-favorite" data-field-id="7">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="fields__card-body">
+              <p class="fields__card-price">$46</p>
+              <h3 class="fields__card-name">
+                <a href="#">Indoor 03</a>
+              </h3>
+              <p class="fields__card-location">
+                <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                Wijaya Kusuma No. 03 Surabaya
+              </p>
+              <hr />
+              <div class="fields__card-feature-list">
+                <div class="fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Futsal</span>
+                </div>
+                <div class="fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fields__card" data-animated>
+            <div class="fields__card-top">
+              <img
+                alt=""
+                src="./img/fields/field-8.png"
+                class="fields__card-img"
+              />
+              <button class="fields__card-favorite" data-field-id="8">
+                <img alt="Favorite" src="./img/icons/heart-black.png" />
+                <img alt="Favorite" src="./img/icons/heart-solid-primary.png" />
+              </button>
+            </div>
+            <div class="fields__card-body">
+              <p class="fields__card-price">$35</p>
+              <h3 class="fields__card-name">
+                <a href="#">Pahlawan Badminton</a>
+              </h3>
+              <p class="fields__card-location">
+                <img alt="Location" src="./img/icons/location-gray.png" />Jl.
+                Pahlawan No. 21 Gresik
+              </p>
+              <hr />
+              <div class="fields__card-feature-list">
+                <div class="fields__card-feature-item">
+                  <img alt="Category" src="./img/icons/grid-8-gray.png" />
+                  <span>Golf</span>
+                </div>
+                <div class="fields__card-feature-item">
+                  <img alt="Size" src="./img/icons/crop-gray.png" />
+                  <span>12x20 Meters</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container how">
+        <h2 class="how__header" data-animated>
+          How to rent a field in 3 easy steps
+        </h2>
+        <div class="how__body">
+          <div class="how__list" data-animated>
+            <div class="how__item">
+              <img alt="Step 1" src="./img/how/how-1.png" class="how__img" />
+              <h3 class="how__title">1. Nulla id dui sit amet sem lobortis</h3>
+              <p class="how__description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit odio
+                massa ege.
+              </p>
+            </div>
+            <div class="how__item">
+              <img alt="Step 1" src="./img/how/how-2.png" class="how__img" />
+              <h3 class="how__title">
+                2. Fusce pellentesque ante vel dolor hendrerit
+              </h3>
+              <p class="how__description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit odio
+                massa ege.
+              </p>
+            </div>
+            <div class="how__item">
+              <img alt="Step 1" src="./img/how/how-3.png" class="how__img" />
+              <h3 class="how__title">
+                3. Lorem ipsum dolor sit amet consectetur
+              </h3>
+              <p class="how__description">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit odio
+                massa ege.
+              </p>
+            </div>
+          </div>
+          <a href="#" class="how__button" data-animated>Explore fields</a>
+        </div>
+      </div>
+      <div class="promotion">
+        <div class="container promotion__container" data-animated>
+          <div class="promotion__left">
+            <h2 class="promotion__title">
+              Experience the best field rental service
+            </h2>
+            <p class="promotion__description">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit odio massa
+              eget posuere at proin lectus proin morbi euismod itae purus donec
+              cursus neque adipiscing maecenas proin eu viverra commodo felis
+              risus at amet ornare pellentesque nulla ipsu.
+            </p>
+            <a href="#" class="promotion__button" data-animated
+              >Explore fields</a
+            >
+          </div>
+          <div class="promotion__right">
+            <img
+              alt="Promotion"
+              src="./img/promotions/promotion-1.png"
+              class="promotion__img"
+            />
+            <img
+              alt="Promotion"
+              src="./img/promotions/promotion-2.png"
+              class="promotion__img"
+              data-animated
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container join">
+        <div class="join__card join__card_partner" data-animated>
+          <h2 class="join__title">List your field today</h2>
+          <p class="join__description">
+            Lorem ipsum dolor sit amet conse ctetur adipiscing elit ipsum at
+            iaculis nulla nulla justo.
+          </p>
+          <a href="#" class="join__button join__button_primary" data-animated
+            >Join as a partner</a
+          >
+        </div>
+        <div class="join__card" data-animated>
+          <h2 class="join__title">Rent our field today</h2>
+          <p class="join__description">
+            Lorem ipsum dolor sit amet conse ctetur adipiscing elit ipsum at
+            iaculis nulla nulla justo.
+          </p>
+          <a href="#" class="join__button" data-animated>Join as a user</a>
+        </div>
+      </div>
+    </main>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__header" data-animated>
+          <div class="footer__header-left">
+            <a href="" class="footer__brand"
+              ><img alt="SportEase" src="./img/sportease.png"
+            /></a>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna sed
+              tortor nullam vel velit quis enim et amet.
+            </p>
+            <div class="footer__socmed-list">
+              <a href="#" class="footer__socmed-link">
+                <img
+                  alt="SportEase Facebook"
+                  src="./img/icons/facebook.png"
+                  class="footer__socmed-img"
+                />
+              </a>
+              <a href="#" class="footer__socmed-link">
+                <img
+                  alt="SportEase Twitter"
+                  src="./img/icons/twitter.png"
+                  class="footer__socmed-img"
+                />
+              </a>
+              <a href="#" class="footer__socmed-link">
+                <img
+                  alt="SportEase Instagram"
+                  src="./img/icons/instagram.png"
+                  class="footer__socmed-img"
+                />
+              </a>
+              <a href="#" class="footer__socmed-link">
+                <img
+                  alt="SportEase LinkedIn"
+                  src="./img/icons/linkedin-in.png"
+                  class="footer__socmed-img"
+                />
+              </a>
+              <a href="#" class="footer__socmed-link">
+                <img
+                  alt="SportEase Youtube"
+                  src="./img/icons/youtube.png"
+                  class="footer__socmed-img"
+                />
+              </a>
+            </div>
+          </div>
+          <form action="" class="footer__header-right">
+            <h3 class="footer__newsletter-title">
+              Subscribe to our newsletter
+            </h3>
+            <div class="footer__newsletter-input-group">
+              <input
+                id="newsletter"
+                placeholder="Enter your email address"
+                required
+                type="email"
+              />
+              <label for="newsletter"
+                ><img alt="Email" src="./img/icons/email.png"
+              /></label>
+            </div>
+            <button
+              class="footer__newsletter-button"
+              data-animated
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <hr />
+        <div class="footer__body">
+          <div class="footer__body-left" data-animated>
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">Sport Fields</h3>
+              <div class="footer__menu-list">
+                <a href="#" class="footer__menu-link">Futsal field</a>
+                <a href="#" class="footer__menu-link">Badminton court</a>
+                <a href="#" class="footer__menu-link">Tennis court</a>
+                <a href="#" class="footer__menu-link"
+                  >Football field <span class="footer__menu-badge">New</span></a
+                >
+                <a href="#" class="footer__menu-link">Billiard field</a>
+                <a href="#" class="footer__menu-link"
+                  >Basketball court
+                  <span class="footer__menu-badge">New</span></a
+                >
+                <a href="#" class="footer__menu-link">Hockey field</a>
+                <a href="#" class="footer__menu-link">Golf course</a>
+              </div>
+            </div>
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">User</h3>
+              <div class="footer__menu-list">
+                <a href="#" class="footer__menu-link">Sports arenas</a>
+                <a href="#" class="footer__menu-link">Rental history</a>
+                <a href="#" class="footer__menu-link">Sign in</a>
+                <a href="#" class="footer__menu-link">Sign up</a>
+                <a href="#" class="footer__menu-link">Email verification</a>
+                <a href="#" class="footer__menu-link">Forgot password</a>
+              </div>
+            </div>
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">Partner</h3>
+              <div class="footer__menu-list">
+                <a href="#" class="footer__menu-link">Sign in partner</a>
+                <a href="#" class="footer__menu-link">Sign up partner</a>
+                <a href="#" class="footer__menu-link">Email verification</a>
+                <a href="#" class="footer__menu-link">Forgot password</a>
+              </div>
+            </div>
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">Company</h3>
+              <div class="footer__menu-list">
+                <a href="#" class="footer__menu-link">About SportEase</a>
+                <a href="#" class="footer__menu-link">Blog</a>
+                <a href="#" class="footer__menu-link">FAQ</a>
+                <a href="#" class="footer__menu-link">Contact</a>
+                <a href="#" class="footer__menu-link">Sitemap</a>
+              </div>
+            </div>
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">Policy</h3>
+              <div class="footer__menu-list">
+                <a href="#" class="footer__menu-link">Privacy policy</a>
+                <a href="#" class="footer__menu-link">Terms of service</a>
+                <a href="#" class="footer__menu-link">Disclaimer</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__body-right" data-animated>
+            <h3 class="footer__menu-title">Explore by city</h3>
+            <div class="footer__card-list">
+              <div class="footer__card-item">
+                <img
+                  alt="Surabaya"
+                  src="./img/cities/surabaya.png"
+                  class="footer__card-img"
+                />
+                <div class="footer__card-body">
+                  <h4 class="footer__card-title">
+                    <a href="#">Surabaya, Jawa Timur</a>
+                    <i><img alt="See" src="./img/icons/arrow-right.png" /></i>
+                  </h4>
+                  <p class="footer__card-description">
+                    Lorem ipsum dolor sit amet cons ectetur adipiscing elit mag.
+                  </p>
+                </div>
+              </div>
+              <div class="footer__card-item" data-animated>
+                <img
+                  alt="Gresik"
+                  src="./img/cities/gresik.png"
+                  class="footer__card-img"
+                />
+                <div class="footer__card-body">
+                  <h4 class="footer__card-title">
+                    <a href="#">Gresik, Jawa Timur</a>
+                    <i><img alt="See" src="./img/icons/arrow-right.png" /></i>
+                  </h4>
+                  <p class="footer__card-description">
+                    Lorem ipsum dolor sit amet cons ectetur adipiscing elit mag.
+                  </p>
+                </div>
+              </div>
+              <div class="footer__card-item" data-animated>
+                <img
+                  alt="Malang"
+                  src="./img/cities/malang.png"
+                  class="footer__card-img"
+                />
+                <div class="footer__card-body">
+                  <h4 class="footer__card-title">
+                    <a href="#">Malang, Jawa Timur</a>
+                    <i><img alt="See" src="./img/icons/arrow-right.png" /></i>
+                  </h4>
+                  <p class="footer__card-description">
+                    Lorem ipsum dolor sit amet cons ectetur adipiscing elit mag.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="footer__copyright">
+          Copyright © 2023
+          <a href="https://www.linkedin.com/in/shafygunawan/">Shafy Gunawan</a>.
+          All Rights Reserved | GitHub:
+          <a href="https://github.com/shafygunawan/sportease">SportEase</a>
+        </p>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/user/script.js"></script>
+    <script src="./js/user/landing-page.js"></script>
+  </body>
+</html>
